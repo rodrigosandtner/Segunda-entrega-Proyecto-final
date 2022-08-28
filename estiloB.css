@@ -122,9 +122,8 @@
     margin: 25px;
 }
 
-main.Galeria{
-    background-image: url(./Imagenes/fondo\ azul.jpg);
-
+.mainGaleria {
+        background-color: black;
 }
 
 /* PAGINA QUIEN SOY */
