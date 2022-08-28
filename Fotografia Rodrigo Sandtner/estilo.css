@@ -1,0 +1,411 @@
+*{
+    margin: 0px;
+    font-family: 'Staatliches', cursive;
+}
+/* Aca comienza vista mobile*/
+/* .bodyContenedor{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer"; 
+
+}*/
+
+    .headerA{
+        /* grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-items: center;
+        height: auto; */
+        background-image: linear-gradient(to top, #02538b , rgb(12, 32, 97));
+}
+
+        .navLogo{
+            border: solid 2px rgb(132, 174, 204);
+            height: 75px;
+            width: 100px;
+            margin: 40px 20px 20px 20px;
+        }
+
+        .cajaLogo{
+            width: 100%;
+            height: 100%;
+        }
+
+        .imagenLogo{
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .navLista{
+            display:flex;
+            height: auto;
+            margin: 15px;
+
+        }
+
+        .lista{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            align-items: stretch;
+            padding-left: 0px;
+        }
+
+        .lista li{
+        
+            color: rgb(255, 255, 255);
+            border: solid 3px rgba(3, 3, 3, 0.541);
+            border-radius:10px;
+            font-size: 20px;
+            text-align: center;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-bottom: 5px;
+            transition: 2s;
+        }
+        .lista li:hover{
+            background-color: #cfc032;
+            transform: scale(1.5,1.5);
+        }
+
+        .lista li a{
+            text-decoration: none;
+            color: rgb(208, 255, 239);
+        }
+
+        /* .lista li a:hover{
+            color: rgb(87, 0, 82);
+        } */
+
+    .main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        color: azure;
+        background-color: rgb(0, 0, 0);
+        align-items: center;
+        justify-content: space-around;
+        }
+
+
+        
+    .main h1{   
+            text-align: center;
+            position: relative;
+            animation-name: animacionTexto;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;  
+        }
+            
+    @keyframes animacionTexto {
+        0%   {color: rgb(245, 226, 197); left:-400px;}
+        50%  {color: rgb(148, 238, 238); left:400px;}
+        100% {color: rgb(245, 226, 197); left:-399px;}
+    }
+
+        .cajaImagen{ 
+            display: flex;
+            height: 250px;
+            width: 96%;
+            align-items: end;
+        } 
+        .imagenInicio{
+            height: 100%;
+            width: 100%;
+        }
+
+    .footer{
+        background-color:rgba(20, 19, 19, 0.959);
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+        height: 200px;
+        background-image: linear-gradient(to bottom, #000000 , rgb(41, 41, 41));
+        }   
+
+
+    .textoFooter{
+        font-size: 16px;
+
+        color: rgb(255, 214, 168);
+    }
+/* Aca comienza Galeria para vista mobile */
+.mainGaleria{
+    grid-area: main;
+    display: flex;
+    border: solid 2px black;
+    color: azure;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+    .card{
+    display: flex;
+    flex-direction: column;
+    border: solid 3px rgb(230, 227, 227);
+    width: 200px;
+    height: 310px;
+    border-radius: 10px;
+    background-color: black;
+    margin: 30px 0px 30px 0px;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: 1s;
+}
+    .card:hover{
+        transform: scale(2,2);
+    }
+    
+    .imagenCard{
+        width: 100%;
+        
+}
+
+    .textosCard{
+        background-color: rgb(0, 0, 0);
+        color: beige;
+}
+
+        .textosCard h3{
+            font-size: 20px;
+            color: rgb(177, 25, 25);
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+/* Aca comienza pagina "Quien Soy" para vista mobile */
+        
+
+.mainQuiensoy
+        {
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            justify-content: space-around;
+            background-color: black;
+        }
+
+        .parrafoQuiensoy{
+            color:rgb(183, 220, 255);
+            font-size: 16px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px 20px 0px 20px;
+
+        }
+
+        .imagenQuiensoy{
+            border-radius: 25px;
+            width: 60%;
+            height: 70%;
+            margin: 20px 0px 20px 0px;        
+        }    
+
+/* Aca comienza pagina "Contacto" para vista mobile */
+
+.mainContacto{
+    background-color: black;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .sectionContacto{
+        display: flex;
+        flex-direction: column;
+  
+        margin: 30px;
+        color:rgb(93, 159, 218);
+        justify-items: center;
+    }        
+
+        .formularioContacto{
+            display: flex;
+            flex-direction: column;
+            justify-items: stretch;
+            align-items: stretch;
+
+        }
+
+    .tituloContacto{
+        color:aliceblue;
+        text-align: center;
+}
+    .labelForm{
+
+        margin: 10px 0px 0px 3px;
+        
+    }
+
+    .divForm{
+        text-align: center;
+        margin: 5px 10px 5px 10px;
+    }
+
+    .botonesForm{
+        background-color: #C9C9C9;
+        border-radius: 20px;
+    }
+
+/* Aca comienza pagina "Servicios" para vista mobile */  
+
+.mainServicios{
+    grid-area: main;
+    display: flex;
+
+    color: azure;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    }
+
+.cardServicios{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px rgb(201, 201, 201);
+    border-radius: 10px;
+    width: 80%;
+    margin: 50px 10px 50px 10px;
+    overflow: hidden;
+
+}
+.imagenCardServicios{
+    width: 100%;
+
+}
+
+.titulosServicios{
+    border: solid 2px rgb(0, 0, 0);
+    text-align: center;
+    color:#82BDE8;
+    font-weight: 100;
+    background-color: #14354d;
+
+
+}
+.textoServicios{
+    color:rgb(201, 201, 201);
+    text-align: center;
+    margin:10px;
+}
+
+/* Aca comienza vista desktop*/
+        @media screen and (min-width: 768px) and (orientation: landscape)
+{
+    .bodyContenedor{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 3fr 100%;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+        .header{
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-content: center;
+            justify-content:space-around;
+            height: 150px;
+        } 
+        
+        .navLogo{
+            margin:10px;
+        }
+        .navLista{
+            display: flex;
+            align-content:flex-end;
+        }
+        
+        .lista{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-items: flex-end; 
+        }
+
+        .lista li{
+            
+            font-size: 18px;
+            margin-left:20px;
+            margin-right: 20px;
+            padding: 0px 5px 0px 5px;
+            color: rgb(245, 232, 204);
+            /* border: solid 2px rgba(3, 3, 3, 0.541); */
+            border-radius:10px;
+ 
+        }
+
+        .main{
+            display: flex;
+            color: azure;
+            background-color: rgb(0, 0, 0);
+            flex-direction: column;
+            justify-content:space-around;
+        }
+
+        .mainGaleria{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+            .cajaImagen{
+                width: auto;
+                height: 100%;
+            }
+
+        .mainServicios{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+                
+        }
+            .cardServicios{
+                width: 40%;
+                margin: 30px;
+            }
+        
+        .mainQuiensoy{
+            display: flex;
+            flex-direction: row;
+        }
+            .parrafoQuiensoy{
+                margin: 15px;
+                width: 30%;
+            }
+
+            .imagenQuiensoy{
+                height: auto;
+                margin: 50px 10px 50px 10px;
+            }
+
+
+        .footer{
+            justify-content: space-around;
+            justify-items: center;
+            
+        }
+
+        .cajaRedes h3{
+            margin:0px 60px 0px 60px; */
+        }
+
+}
+/* aca comienza pagina "Servicios" */
