@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,40 +11,41 @@
     <link rel="stylesheet" href="./estiloB.css">
   </head>
 <body>
-  <div class="row d-flex align-items-center" style="border: solid 2px red">
-    <!-- <header class="header" style="border: solid 2px green;"> -->
-      <div class="col-12 col-lg-3" class="d-flex justify-content-center">
-        <nav class="navLogo">
-          <div class="cajaLogo">
+  <div class="container-fluid header">
+    <div class="row">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+          <nav class="navLogo">
             <a href="./index.html"><img src="./Imagenes/camera6.png" class="imgLogo" alt="" width="80px" height="80px"></a>
-          </div>
-        </nav>
-      </div>
-      <div class="col-12 col-lg-9">
-        <nav class="navLista">
-          <ul class="lista d-flex flex-column flex-lg-row  justify-content-lg-evenly">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./galeria.html">Galeria</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./quiensoy.html">Quien Soy</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  </div>
+          </nav>
+        </div>
+        <div class="col-12 d-flex justify-content-center col-md-9 d-flex align-items-end">
+          <!-- <nav class="navLista d-flex align-items-center" style="border: solid 2px green;"> -->
+            <ul class="lista d-flex flex-column flex-md-row">
+              <li><a href="./index.html" class="d-flex justify-content-center ">Inicio</a></li>
+              <li><a href="./galeria.html" class="d-flex justify-content-center ">Galeria</a></li>
+              <li><a href="./servicios.html" class="d-flex justify-content-center ">Servicios</a></li>
+              <li><a href="./quiensoy.html" class="d-flex justify-content-center ">Quien Soy</a></li>
+              <li><a href="./contacto.html" class="d-flex justify-content-center ">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+</div>
 
-  <footer class="row" style="border: solid 2px blue;">
-    <div class="col-6">
-      <h3 class="textoFooter">Creado por Rodrigo Sandtner</h3>
+
+  <div class="container-fluid footer">
+    <div class="row h-100">
+        <div class="col text-center d-flex align-items-center justify-content-center">
+          <h3 class="textoFooter">Creado por Rodrigo Sandtner Kogan</h3>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <nav class="navFooter w-75 d-flex justify-content-evenly">
+            <a href="https://www.facebook.com/juanrodrigo.sandtnerkogan/"><img src="./imagenes/face.png" class="rounded" alt="" width="60px" height="60px"></a>
+            <a href="https://www.instagram.com/rodrigosandtner/"><img src="./imagenes/face.png" class="rounded" alt="" width="60px" height="60px"></a>
+          </nav>
+        </div> 
     </div>
-    <div class="col-6">
-      <h3 class="textoFooter">Facebook</h3>
-      <h3 class="textoFooter">Instagram</h3>
-    </div>
-  </footer>
-</body>
-</html>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
 </body>
