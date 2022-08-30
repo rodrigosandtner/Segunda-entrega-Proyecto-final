@@ -1,0 +1,10 @@
+div {
+    background-color: crimson;
+p{
+    color: $primaryColor;
+    &:hover{
+        color: black;
+    }
+}
+
+}

@@ -1,0 +1,9 @@
+div {
+  background-color: crimson;
+}
+div p {
+  color: black;
+}
+div p:hover {
+  color: black;
+}/*# sourceMappingURL=styles.css.map */
