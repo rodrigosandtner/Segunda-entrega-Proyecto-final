@@ -59,8 +59,7 @@
   align-items: center;
   justify-content: space-around;
 }
-
-.textoInicio {
+.main .textoInicio {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
   position: relative;
@@ -73,7 +72,6 @@
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
-
 @-webkit-keyframes animacionTexto {
   0% {
     color: rgb(226, 185, 97);
@@ -88,7 +86,6 @@
     left: -30px;
   }
 }
-
 @keyframes animacionTexto {
   0% {
     color: rgb(226, 185, 97);
@@ -104,7 +101,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .textoInicio {
+  .main .textoInicio {
     -webkit-animation-duration: 15s;
             animation-duration: 15s;
     -webkit-animation-iteration-count: infinite;
