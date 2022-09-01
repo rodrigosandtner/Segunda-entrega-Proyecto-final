@@ -1,2 +1,5 @@
-@import "./partials/header","./partials/footer", "./partials/main";
+/*Variables */
+@import "./variables/colors", "./variables/sizes";
 
+/*Partials */
+@import "./partials/header","./partials/footer", "./partials/main";
