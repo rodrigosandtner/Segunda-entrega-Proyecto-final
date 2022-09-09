@@ -1,41 +1,42 @@
 /* HEADER */
-.header{
-        height: auto;
-        background: $backgroundHeader;
-    }
+.header {
+    height: auto;
+    background-color: $backgroundHeader;
 
-    .navLogo{
+    .navLogo {
         margin: 20px 20px 20px 20px;
-    } 
 
-    .imgLogo:hover {
-        transform: scale(1.3,1.3);
+        &:hover {
+            transform: scale(1.3, 1.3);
+        }
     }
 
-.lista{
-    list-style-type: none;
-    padding-left: 0px; 
-}
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
 
-.lista li{   
-    color: rgb(255, 255, 255);
-    border: solid 3px rgba(3, 3, 3, 0.541);
-    border-radius:10px;
-    font-size: 20px;
-    text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-bottom: 5px;
-    margin: 10px 10px 10px 10px;
-    transition: 1s;
-}
+        li {
+            text-decoration: none;
+            color: map-get($estilos, color1);
+            border: map-get($estilos, border1);
+            border-radius: map-get($estilos,borderRadius);
+            font-size: 20px;
+            text-align: center;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin: 10px 10px 10px 10px;
+            transition: 1s;
+            background-color: map-get($estilos, color3 );
 
-.lista li:hover{
-    background-color: #cfc032;
-    transform: scale(1.3,1.3);
-}
+            &:hover {
+                background-color: map-get($estilos, color1);
+                transform: scale(1.2, 1.2);
+            }
 
-.lista li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+            a {
+                text-decoration: none;
+                color: map-get($estilos, color2);
+            }
+        }
+    }
 }

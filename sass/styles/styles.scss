@@ -1,5 +1,13 @@
-/*Variables */
-@import "./variables/colors", "./variables/sizes";
 
-/*Partials */
-@import "./partials/header","./partials/footer","./partials/main","./partials/extends";
+@import 
+"./partials/maps",
+"./variables/colors",
+"./variables/sizes",
+"./variables/fonts",
+"./partials/header",
+"./partials/main",
+"./partials/footer",
+"./partials/extends",
+"./partials/mixins",
+"./partials/cards";
+
