@@ -52,7 +52,7 @@
   color: rgb(255, 168, 168);
 }
 
-/* PAGINA MAIN */
+/* PAGINA INICIO */
 .main {
   display: flex;
   flex-direction: column;
@@ -139,4 +139,21 @@
       left: -249px;
     }
   }
+}
+
+/*Pagina Galeria*/
+.mainGaleria {
+  background-color: rgb(0, 0, 0);
+}
+
+.mainContacto {
+  background-color: rgb(0, 0, 0);
+}
+
+.mainQuienSoy {
+  background-color: rgb(0, 0, 0);
+}
+
+.mainServicios {
+  background-color: rgb(0, 0, 0);
 }/*# sourceMappingURL=styles.css.map */
