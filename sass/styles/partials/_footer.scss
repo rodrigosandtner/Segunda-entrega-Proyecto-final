@@ -1,11 +1,14 @@
 .footer{
-    background-color:rgba(20, 19, 19, 0.959);
-    background-image: linear-gradient(to bottom, #000000 , rgb(41, 41, 41));
+    background-image: linear-gradient(to bottom, $colorTres, $colorCuatro);
     height: 200px;
 
     .textoFooter{
         font-size: 16px;
-        color: rgb(168, 245, 255);
+        color: $primary-color;
     }
 
+    .logoRedesFooter{
+        width: $logoRedesFooter ;
+        height: $logoRedesFooter ;
+    }
 }

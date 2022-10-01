@@ -1,7 +1,9 @@
 /* PAGINA INICIO */
 .mainInicio {
     @extend %displayMain !optional;
-    background-color: $backgroundMain;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1)65%, rgb(0, 0, 0) 70%);
+
+
 
     .textoInicio {
         font-family: 'Dancing Script', cursive;
@@ -55,22 +57,82 @@
             }
         }
     }
+
+    .imgInicio {
+        width: $imgInicio;
+        z-index: -1;
+    }
 }
 
 /*Pagina Galeria*/
- .mainGaleria{
-     background-color: $backgroundMain;
-     @extend %displayMain !optional;
+.mainGaleria {
+    @extend %displayMain !optional;
+    background-color: rgba(0, 0, 0);
+    background-image: linear-gradient(to bottom, $colorDos, $colorTres);
+
+    .imgCarousel {
+        border: solid 20px rgb(218, 217, 217);
+        margin: 30px;
     }
- .mainContacto{
-     background-color: $backgroundMain;
-     @extend %displayMain !optional;
+}
+
+/*Pagina Quien Soy*/
+
+.mainQuienSoy {
+    background-color: $backgroundMain;
+
+
+    .parrafoQuienSoy {
+        color: $secondary-color;
+        font-size: $fontSize3;
+        font-family: $poppins;
+
     }
- .mainQuienSoy{
-     background-color: $backgroundMain;
-     @extend %displayMain !optional;
+
+    .imgQuienSoy {
+        width: $imgQuienSoyWidth;
+        height: $imgQuienSoyHeight;
     }
- .mainServicios{
-     background-color: $backgroundMain;
-     @extend %displayMain !optional;
- }
+}
+
+.mainServicios {
+    background-color: $backgroundMain;
+
+
+
+    .cardServicios {
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 18px;
+        background: white;
+
+        &:hover {
+            box-shadow: 5px 5px 15px rgba(180, 180, 180, 0.9);
+        }
+
+        .card-text{
+            border: solid 1 px red;
+        }
+
+    }
+}
+
+/*Pagina Contacto*/
+
+.mainContacto {
+    background-color: $backgroundMain;
+    color: $primary-color;
+
+    .titulosContacto {
+        margin: 30px 0px 30px 0px;
+    }
+
+    .textosRedesContacto {
+        margin-left: 20px;
+        font-size: 14px;
+        color: $secondary-color;
+    }
+    .labelForm{
+        color: $secondary-color;
+    }
+
+}
